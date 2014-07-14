@@ -1,7 +1,7 @@
 NaiveMVC
 =========
 
-Simple MVC middleware for express. Inspired by ASP.NET MVC framework.
+Simple MVC middleware for express. Inspired by .NET MVC framework.
 
 Install
 =======
@@ -15,7 +15,7 @@ Simple Usage
 
 ```javascript
 var express = require('express');
-var naivemvc = require('naivemvc')(express);
+var naivemvc = require('naive-mvc')(express);
 
 var app = express();
 app.use(naivemvc()); // Then use as middleware
@@ -83,7 +83,7 @@ To register an area, do the following
 ```javascript
 // areas/api_v1/index.js
 
-var naivemvc = require('naivemvc');
+var naivemvc = require('naive-mvc');
 
 module.exports = function(router) {
     router.use('/api/v1', naivemvc({basePath: __dirname}); // You must supply basePath here
@@ -101,7 +101,7 @@ module.exports = function(router) {
 };
 ```
 
-*** Note: You must supply `basePath` options when registering an area ***
+* Note: You must supply `basePath` options when registering an area *
 
 API
 ===
@@ -119,7 +119,7 @@ naivemvc(options, callback)
 - `defaultDocument` {String} (default: 'index'): default name of index file
 - `params` {Array<String>}: Parameters that passed to every controllers
 
-#### A note on using *** params ***
+#### A note on using * params *
 
 If you specific params in options, they are passed to every controller
 
