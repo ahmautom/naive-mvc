@@ -1,0 +1,21 @@
+{
+    "name": "naive-mvc",
+    "version": "0.0.1",
+    "description": "Simple MVC middleware for express",
+    "keywords": [
+        "express",
+        "mvc",
+        "middleware"
+    ],
+    "licenses": "MIT",
+    "author": "Mau Ka Ming <ahmautom@gmail.com>",
+    "main": "lib/naivemvc.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/ahmautom/naive-mvc.git"
+    },
+    "dependencies": {
+        "async": "^0.9.0",
+        "underscore": ">1.5.0"
+    }
+}
