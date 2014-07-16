@@ -26,7 +26,7 @@ Project Structure
 
 Let's assume you have the following project layout
 
-```javascript
+```
 |-- areas
 |   |-- api_v1
 |   |   |-- controllers
@@ -106,8 +106,18 @@ module.exports = function(router) {
 API
 ===
 
-naivemvc(options, callback)
----------------------------
+naivemvc([options], [callback])
+-------------------------------
+
+Shorthand method for calling `naivemvc.registerAllControllers` and `naivemvc.registerAllAreas` together.
+
+### Return
+
+Express.Router
+
+```javascript
+app.use(naivemvc());
+```
 
 ### Options
 
@@ -152,6 +162,48 @@ module.exports = function(router, db) {
 };
 ```
 
-## License 
+naivemvc.registerAllControllers([options], [callback])
+------------------------------------------------------
 
-MIT. See [License](LICENSE)
+Scan `controllers` directory and register all controllers
+
+### Return
+
+Express.Router
+
+```javascript
+app.use(naivemvc.registerAllControllers());
+```
+
+### Options (see `naivemvc()`)
+
+- `basePath`
+- `controllerPath`
+- `viewPath`
+- `viewEngine`
+- `defaultDocument`
+- `params`
+
+naivemvc.registerAllAreas([options], [callback])
+------------------------------------------------------
+
+Scan `areas` directory and register all areas
+
+### Return
+
+Express.Router
+
+```javascript
+app.use(naivemvc.registerAllAreas());
+```
+
+### Options (see `naivemvc()`)
+
+- `basePath`
+- `areaPath`
+- `params`
+
+License 
+=======
+
+[MIT](LICENSE)
