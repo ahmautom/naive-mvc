@@ -1,6 +1,6 @@
 {
     "name": "naive-mvc",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Simple MVC middleware for express",
     "keywords": [
         "express",
