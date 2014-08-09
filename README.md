@@ -111,13 +111,13 @@ naivemvc([options], [callback])
 
 Shorthand method for calling `naivemvc.registerAllControllers` and `naivemvc.registerAllAreas` together.
 
-### Return
-
-Express.Router
-
 ```javascript
 app.use(naivemvc());
 ```
+
+### Return
+
+Express.Router
 
 ### Options
 
@@ -167,13 +167,13 @@ naivemvc.registerAllControllers([options], [callback])
 
 Scan `controllers` directory and register all controllers
 
-### Return
-
-Express.Router
-
 ```javascript
 app.use(naivemvc.registerAllControllers());
 ```
+
+### Return
+
+Express.Router
 
 ### Options (see `naivemvc()`)
 
@@ -189,13 +189,13 @@ naivemvc.registerAllAreas([options], [callback])
 
 Scan `areas` directory and register all areas
 
-### Return
-
-Express.Router
-
 ```javascript
 app.use(naivemvc.registerAllAreas());
 ```
+
+### Return
+
+Express Application
 
 ### Options (see `naivemvc()`)
 
